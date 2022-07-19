@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:taxi_app/presentation/views/splash/splash_page.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           child: child!,
         );
       },
-      home: const Main(),
+      home: const SplashPage(),
     );
   }
 }
@@ -32,13 +33,4 @@ class MyBehavior extends ScrollBehavior {
   ScrollPhysics getScrollPhysics(BuildContext context) =>
       const ClampingScrollPhysics();
 }
-class Main extends StatelessWidget {
-  const Main({ Key? key }) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
-}
