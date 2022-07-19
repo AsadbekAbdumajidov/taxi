@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:taxi_app/core/routes/app_routes.dart';
-import 'package:taxi_app/presentation/views/home/home_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -16,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(const Duration(seconds: 3), () {
       setState(() {
         Navigator.pushNamedAndRemoveUntil(
-            context, AppRoutes.home, (route) => false);
+            context, AppRoutes.mapViews, (route) => false);
       });
     });
   }
