@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animate_do",
+      "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/animate_do-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2",
       "packageUri": "lib/",
@@ -212,7 +218,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-07-19T11:15:48.129676Z",
+  "generated": "2022-07-19T11:36:13.288487Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

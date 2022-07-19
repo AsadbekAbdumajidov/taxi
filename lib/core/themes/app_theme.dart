@@ -6,7 +6,7 @@ import 'colors.dart';
 
 final appThemeData = ThemeData(
   colorScheme:
-      ColorScheme.fromSwatch().copyWith(secondary: AppColors.primaryColor),
+      ColorScheme.fromSwatch().copyWith(secondary: AppColors.instance.primaryColor),
   appBarTheme: const AppBarTheme(
     color: Colors.white,
     elevation: 0,
@@ -21,10 +21,10 @@ final appThemeData = ThemeData(
     centerTitle: true,
   ),
   fontFamily: 'SFPro',
-  backgroundColor: AppColors.backgroundColor,
+  backgroundColor: AppColors.instance.backgroundColor,
   cupertinoOverrideTheme: const CupertinoThemeData(brightness: Brightness.dark),
   visualDensity: VisualDensity.adaptivePlatformDensity,
-  primarySwatch: Colors.red,
+  primarySwatch: Colors.amber,
   pageTransitionsTheme: const PageTransitionsTheme(builders: {
     TargetPlatform.android: CupertinoPageTransitionsBuilder(),
     TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
