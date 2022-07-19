@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:taxi_app/core/extension/for_context.dart';
 import 'package:taxi_app/core/themes/colors.dart';
-import 'package:taxi_app/core/themes/decoration.dart';
+import 'package:taxi_app/presentation/components/decoration.dart';
 import 'package:taxi_app/core/themes/styles.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
 
 class BottomContainer extends StatelessWidget {
-  const BottomContainer({Key? key}) : super(key: key);
-
+  const BottomContainer({Key? key, required this.onPressed}) : super(key: key);
+  final Function() onPressed;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -17,7 +17,7 @@ class BottomContainer extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: FloatingActionButton(
               backgroundColor: AppColors.instance.white,
-              onPressed: () {},
+              onPressed: onPressed,
               child: Icon(
                 Icons.maps_ugc_rounded,
                 color: AppColors.instance.black,
@@ -27,7 +27,8 @@ class BottomContainer extends StatelessWidget {
         Container(
           height: he(110),
           width: context.w,
-          decoration: AppDecoration.instance.styleBoxShadowBorderRadiusAll20White,
+          decoration:
+              AppDecoration.instance.styleBoxShadowBorderRadiusAll20White,
           child: Column(
             children: [
               Padding(
@@ -37,23 +38,21 @@ class BottomContainer extends StatelessWidget {
                     Container(
                       height: he(8),
                       width: wi(40),
-                      decoration: BoxDecoration(
-                          color: AppColors.instance.greeySearch,
-                          borderRadius: BorderRadius.circular(16)),
+                      decoration:
+                          AppDecoration.instance.styleGreeySearchBorderRadius16,
                     ),
                     SizedBox(height: he(12)),
                     InkWell(
                       onTap: () {},
                       child: Container(
                         height: he(60),
-                        decoration: BoxDecoration(
-                            color: AppColors.instance.greeySearch,
-                            borderRadius: BorderRadius.circular(12)),
+                        decoration: AppDecoration
+                            .instance.styleGreeySearchBorderRadius12,
                         child: Row(
                           children: [
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: wi(12)),
-                              child:  CircleAvatar(
+                              child: CircleAvatar(
                                   radius: 18,
                                   backgroundColor: AppColors.instance.gray,
                                   child: Icon(

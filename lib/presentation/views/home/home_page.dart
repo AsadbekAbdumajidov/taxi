@@ -21,19 +21,9 @@ class _MapViewsState extends State<MapViews> {
     tilt: 50.0,
   );
   late GoogleMapController _googleMapController;
-  late Marker _origin = const Marker(
-      markerId: MarkerId("origin"), position: LatLng(41.2995, 69.2401));
-  late Marker _destination = const Marker(
-      markerId: MarkerId("destination"), position: LatLng(41.2995, 69.1223));
-
-  late Directions _info = Directions(
-      bounds: LatLngBounds(
-        northeast: const LatLng(41.2995, 69.2401),
-        southwest: const LatLng(41.2995, 69.2401),
-      ),
-      polylinePoints: PolylinePoints().decodePolyline(""),
-      totalDistance: "",
-      totalDuration: "");
+  late Marker _origin;
+  late Marker _destination;
+  late Directions _info;
 
   final Marker _origin1 = const Marker(
       markerId: MarkerId("origin"), position: LatLng(41.2995, 69.2401));
@@ -48,6 +38,16 @@ class _MapViewsState extends State<MapViews> {
       polylinePoints: PolylinePoints().decodePolyline(""),
       totalDistance: "",
       totalDuration: "");
+
+  @override
+  void initState() {
+    _origin = _origin1;
+    _info = _info1;
+    _destination = _destination1;
+    setState(() {});
+    super.initState();
+  }
+
   @override
   void dispose() {
     _googleMapController.dispose();
@@ -83,9 +83,18 @@ class _MapViewsState extends State<MapViews> {
               },
               onTap: _addMarker,
             ),
-            const Positioned(
-              bottom: 0,
-              child: BottomContainer()),
+            Positioned(
+                bottom: 0,
+                child: BottomContainer(
+                  onPressed: () {
+                    _googleMapController.animateCamera(
+                      _info != _info1
+                          ? CameraUpdate.newLatLngBounds(_info.bounds, 100.0)
+                          : CameraUpdate.newCameraPosition(
+                              _initialCameraPosition),
+                    );
+                  },
+                )),
           ],
         ),
       ),
