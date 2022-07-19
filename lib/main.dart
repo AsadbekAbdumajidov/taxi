@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Taxi app',
-      // theme: appThemeData,
+      theme: appThemeData,
       onGenerateRoute: RouteGenerate().generate,
       builder: (context, child) {
         return ScrollConfiguration(
