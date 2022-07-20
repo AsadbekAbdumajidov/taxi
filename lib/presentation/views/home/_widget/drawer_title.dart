@@ -5,8 +5,10 @@ import 'package:taxi_app/core/themes/styles.dart';
 import '../../../components/size_konfig.dart';
 
 class TitleDriwer extends StatelessWidget {
-  const TitleDriwer({Key? key, required this.title, required this.ontap}) : super(key: key);
+  const TitleDriwer({Key? key, required this.title, required this.ontap, required this.subtitle})
+      : super(key: key);
   final String title;
+  final String subtitle;
   final Function() ontap;
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class TitleDriwer extends StatelessWidget {
         style: AppTextStyle.instance.styleBlackW600S16,
       ),
       subtitle: Text(
-        "Edit profile",
+        subtitle,
         style: AppTextStyle.instance.styleBlackW500S14,
       ),
     );

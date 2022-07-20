@@ -11,16 +11,14 @@ class ItemDriwer extends StatelessWidget {
   final Function() ontap;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: wi(8)),
-      child: ListTile(
+    return ListTile(
           onTap: ontap,
-          title: Text(title, style: AppTextStyle.instance.styleBlackW700S14),
+          title: Text(title, style: AppTextStyle.instance.styleBlackW600S16),
           
           leading: Icon(
             icon,
             size: he(30),
-          )),
+          ),
     );
   }
 }

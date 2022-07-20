@@ -25,8 +25,5 @@ class AppTextStyle {
       color: AppColors.instance.darkGrey,
       fontWeight: FontWeight.w500,
       fontSize: he(14));
-  TextStyle styleBlackW700S14 = TextStyle(
-      color: AppColors.instance.black,
-      fontWeight: FontWeight.w500,
-      fontSize: he(16));
+  
 }

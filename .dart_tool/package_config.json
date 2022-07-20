@@ -68,6 +68,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_exit_app",
+      "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_exit_app-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4",
       "packageUri": "lib/",
@@ -218,7 +224,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-07-19T11:36:13.288487Z",
+  "generated": "2022-07-20T13:46:34.329302Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

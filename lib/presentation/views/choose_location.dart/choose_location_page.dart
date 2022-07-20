@@ -62,11 +62,11 @@ class _ChooseLocationState extends State<ChooseLocation> {
 
   AppBar appBar() {
     return AppBar(
-      shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(
-        bottom: Radius.circular(20),
-      ),
-    ),
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
+        ),
         title: Text(
           "You route",
           style: AppTextStyle.instance.styleW800S20Black,
@@ -76,7 +76,9 @@ class _ChooseLocationState extends State<ChooseLocation> {
           child: IconButton(
             iconSize: 30,
             splashRadius: 24,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: const Icon(Icons.highlight_remove),
           ),
         ),
