@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taxi_app/core/extension/for_context.dart';
+import 'package:taxi_app/core/routes/app_routes.dart';
 import 'package:taxi_app/core/themes/colors.dart';
 import 'package:taxi_app/presentation/components/decoration.dart';
 import 'package:taxi_app/core/themes/styles.dart';
@@ -49,7 +50,9 @@ class BottomContainer extends StatelessWidget {
                     ),
                     SizedBox(height: he(12)),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, AppRoutes.chooseLocation);
+                      },
                       child: Container(
                         height: he(60),
                         decoration: AppDecoration

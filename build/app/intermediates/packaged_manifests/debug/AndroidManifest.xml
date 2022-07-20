@@ -65,7 +65,7 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyByH6A4fSk5ZO3cqgYfz3damG3rhQRmW6A" />
+            android:value="AIzaSyDYXS2cqvzB53b1OMvyj4vvbdZdo58vbGg" />
 
         <uses-library
             android:name="androidx.window.extensions"

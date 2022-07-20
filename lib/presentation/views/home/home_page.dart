@@ -71,6 +71,7 @@ class _MapViewsState extends State<MapViews> {
             GoogleMap(
               myLocationButtonEnabled: false,
               zoomControlsEnabled: false,
+            
               initialCameraPosition: _initialCameraPosition,
               onMapCreated: (controller) => _googleMapController = controller,
               markers: {
@@ -84,7 +85,7 @@ class _MapViewsState extends State<MapViews> {
                     color: Colors.red,
                     width: 5,
                     points: _info.polylinePoints
-                        .map((e) => LatLng(e.latitude, e.longitude))
+                        .map((e) => LatLng(e.latitude,e.longitude))
                         .toList(),
                   ),
               },
@@ -94,12 +95,15 @@ class _MapViewsState extends State<MapViews> {
                 bottom: 0,
                 child: BottomContainer(
                   onTap: () {
+                    _origin = _origin1;
+                    _destination = _destination1;
                     _googleMapController.animateCamera(
                       _info != _info1
                           ? CameraUpdate.newLatLngBounds(_info.bounds, 100.0)
                           : CameraUpdate.newCameraPosition(
                               _initialCameraPosition),
                     );
+                    setState(() {});
                   },
                 )),
           ],

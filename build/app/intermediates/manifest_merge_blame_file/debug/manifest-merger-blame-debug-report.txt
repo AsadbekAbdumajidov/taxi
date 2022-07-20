@@ -76,7 +76,7 @@
 65            android:value="2" />
 66        <meta-data
 67            android:name="com.google.android.geo.API_KEY"
-68            android:value="AIzaSyByH6A4fSk5ZO3cqgYfz3damG3rhQRmW6A" />
+68            android:value="AIzaSyDYXS2cqvzB53b1OMvyj4vvbdZdo58vbGg" />
 69
 70        <uses-library
 70-->[androidx.window:window:1.0.0-beta04] /home/asadbek/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
