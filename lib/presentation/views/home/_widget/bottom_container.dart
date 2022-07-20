@@ -6,24 +6,30 @@ import 'package:taxi_app/core/themes/styles.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
 
 class BottomContainer extends StatelessWidget {
-  const BottomContainer({Key? key, required this.onPressed}) : super(key: key);
-  final Function() onPressed;
+  const BottomContainer({Key? key, required this.onTap}) : super(key: key);
+  final Function() onTap;
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Padding(
-          padding: const EdgeInsets.all(16),
-          child: FloatingActionButton(
-              backgroundColor: AppColors.instance.white,
-              onPressed: onPressed,
-              child: Icon(
-                Icons.maps_ugc_rounded,
-                color: AppColors.instance.black,
-                size: he(32),
-              )),
-        ),
+            padding: const EdgeInsets.all(16),
+            child: Container(
+              decoration: BoxDecoration(
+                  color: AppColors.instance.backgroundColor,
+                  borderRadius: BorderRadius.circular(16)),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: GestureDetector(
+                    onTap: onTap,
+                    child: Icon(
+                      Icons.near_me_outlined,
+                      color: AppColors.instance.primaryColor,
+                      size: he(32),
+                    )),
+              ),
+            )),
         Container(
           height: he(110),
           width: context.w,
@@ -54,14 +60,14 @@ class BottomContainer extends StatelessWidget {
                               padding: EdgeInsets.symmetric(horizontal: wi(12)),
                               child: CircleAvatar(
                                   radius: 18,
-                                  backgroundColor: AppColors.instance.gray,
+                                  backgroundColor: AppColors.instance.primary20,
                                   child: Icon(
                                     Icons.search,
                                     color: AppColors.instance.black,
                                   )),
                             ),
                             Text("Where to?",
-                                style: AppTextStyle.styleW800S20Black)
+                                style: AppTextStyle.instance.styleW800S20Black)
                           ],
                         ),
                       ),

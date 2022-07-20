@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:taxi_app/core/themes/colors.dart';
+import 'package:taxi_app/core/themes/styles.dart';
 import 'package:taxi_app/data/model/direction_model.dart';
 import 'package:taxi_app/data/repository/direction_repository.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
 import 'package:taxi_app/presentation/views/home/_widget/bottom_container.dart';
-import 'package:taxi_app/presentation/views/home/_widget/drawer.dart';
+import 'package:taxi_app/presentation/views/home/drawer.dart';
 
 class MapViews extends StatefulWidget {
   const MapViews({Key? key}) : super(key: key);
@@ -92,7 +93,7 @@ class _MapViewsState extends State<MapViews> {
             Positioned(
                 bottom: 0,
                 child: BottomContainer(
-                  onPressed: () {
+                  onTap: () {
                     _googleMapController.animateCamera(
                       _info != _info1
                           ? CameraUpdate.newLatLngBounds(_info.bounds, 100.0)
@@ -114,6 +115,10 @@ class _MapViewsState extends State<MapViews> {
         borderRadius: BorderRadius.vertical(
           bottom: Radius.circular(20),
         ),
+      ),
+      title: Text(
+        "Chikki taxi",
+        style: AppTextStyle.instance.styleW800S20Black,
       ),
       actions: [
         if (_origin != _origin1)

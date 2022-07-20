@@ -6,7 +6,7 @@ class AppColors {
   AppColors._inint();
 
   Color unselectedCalendar = const Color.fromRGBO(12, 188, 104, 0.2);
-  Color primaryColor = const Color(0xFF585DE4);
+  Color primaryColor = const Color(0xFF2AC1BC);
   Color neutralColor = const Color(0xFFC4D2DF);
   Color black40 = const Color.fromRGBO(0, 0, 0, 0.4);
   Color white = const Color(0xFFFFFFFF);
@@ -20,7 +20,7 @@ class AppColors {
   Color black4 = const Color(0xFFDADADA);
   Color black5 = const Color(0xFF2B2A29);
   Color white12 = const Color.fromRGBO(254, 254, 254, 0.12);
-  Color primary20 = const Color.fromRGBO(88, 93, 228, 0.2);
+  Color primary20 = const Color.fromARGB(255, 183, 237, 235);
   Color darkGrey = const Color(0xFF595C68);
   Color gray = const Color(0xFFBEBFC2);
   Color black6 = const Color.fromRGBO(43, 42, 41, 0.5);
