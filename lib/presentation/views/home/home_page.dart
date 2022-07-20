@@ -2,10 +2,12 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:taxi_app/core/themes/colors.dart';
 import 'package:taxi_app/data/model/direction_model.dart';
 import 'package:taxi_app/data/repository/direction_repository.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
 import 'package:taxi_app/presentation/views/home/_widget/bottom_container.dart';
+import 'package:taxi_app/presentation/views/home/_widget/drawer.dart';
 
 class MapViews extends StatefulWidget {
   const MapViews({Key? key}) : super(key: key);
@@ -57,8 +59,12 @@ class _MapViewsState extends State<MapViews> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
+
     return SlideInLeft(
       child: Scaffold(
+        backgroundColor: AppColors.instance.backgroundColor,
+        drawer: const DrawerComp(),
+        appBar: appBar(),
         body: Stack(
           children: [
             GoogleMap(
@@ -98,6 +104,53 @@ class _MapViewsState extends State<MapViews> {
           ],
         ),
       ),
+    );
+  }
+
+  AppBar appBar() {
+    return AppBar(
+      elevation: 1,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          bottom: Radius.circular(20),
+        ),
+      ),
+      actions: [
+        if (_origin != _origin1)
+          TextButton(
+            onPressed: () => _googleMapController.animateCamera(
+              CameraUpdate.newCameraPosition(
+                CameraPosition(
+                  target: _origin.position,
+                  zoom: 14.5,
+                  tilt: 50.0,
+                ),
+              ),
+            ),
+            style: TextButton.styleFrom(
+              primary: Colors.green,
+              textStyle: const TextStyle(fontWeight: FontWeight.w600),
+            ),
+            child: const Text('ORIGIN'),
+          ),
+        if (_destination != _destination1)
+          TextButton(
+            onPressed: () => _googleMapController.animateCamera(
+              CameraUpdate.newCameraPosition(
+                CameraPosition(
+                  target: _destination.position,
+                  zoom: 14.5,
+                  tilt: 50.0,
+                ),
+              ),
+            ),
+            style: TextButton.styleFrom(
+              primary: Colors.blue,
+              textStyle: const TextStyle(fontWeight: FontWeight.w600),
+            ),
+            child: const Text('DEST'),
+          )
+      ],
     );
   }
 

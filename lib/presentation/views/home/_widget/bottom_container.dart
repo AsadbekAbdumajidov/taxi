@@ -21,7 +21,7 @@ class BottomContainer extends StatelessWidget {
               child: Icon(
                 Icons.maps_ugc_rounded,
                 color: AppColors.instance.black,
-                size: he(33),
+                size: he(32),
               )),
         ),
         Container(
