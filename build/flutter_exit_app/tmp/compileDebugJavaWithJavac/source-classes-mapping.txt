@@ -1,0 +1,8 @@
+com/laoitdev/lib/exit/app/flutter_exit_app/FlutterExitAppPlugin.java
+ com.laoitdev.lib.exit.app.flutter_exit_app.FlutterExitAppPlugin
+ com.laoitdev.lib.exit.app.flutter_exit_app.FlutterExitAppPlugin$1
+ com.laoitdev.lib.exit.app.flutter_exit_app.FlutterExitAppPlugin$2
+com/laoitdev/lib/exit/app/flutter_exit_app/BuildConfig.java
+ com.laoitdev.lib.exit.app.flutter_exit_app.BuildConfig
+com/laoitdev/lib/exit/app/flutter_exit_app/ChannelName.java
+ com.laoitdev.lib.exit.app.flutter_exit_app.ChannelName

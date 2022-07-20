@@ -27,6 +27,7 @@ INJECTED from /home/asadbek/work/Flutter/my_app/taxi/android/app/src/main/Androi
 MERGED from /home/asadbek/work/Flutter/my_app/taxi/android/app/src/main/AndroidManifest.xml:1:1-36:12
 MERGED from [:google_maps_flutter] /home/asadbek/work/Flutter/my_app/taxi/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_plugin_android_lifecycle] /home/asadbek/work/Flutter/my_app/taxi/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_exit_app] /home/asadbek/work/Flutter/my_app/taxi/build/flutter_exit_app/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/asadbek/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /home/asadbek/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /home/asadbek/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:17:1-44:12
@@ -73,6 +74,8 @@ MERGED from [:google_maps_flutter] /home/asadbek/work/Flutter/my_app/taxi/build/
 MERGED from [:google_maps_flutter] /home/asadbek/work/Flutter/my_app/taxi/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/asadbek/work/Flutter/my_app/taxi/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/asadbek/work/Flutter/my_app/taxi/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_exit_app] /home/asadbek/work/Flutter/my_app/taxi/build/flutter_exit_app/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_exit_app] /home/asadbek/work/Flutter/my_app/taxi/build/flutter_exit_app/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/asadbek/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/asadbek/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /home/asadbek/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41

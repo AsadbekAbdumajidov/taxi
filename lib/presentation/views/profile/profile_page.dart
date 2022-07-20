@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxi_app/core/routes/app_routes.dart';
 import 'package:taxi_app/core/themes/colors.dart';
 import 'package:taxi_app/core/themes/styles.dart';
 import 'package:taxi_app/presentation/components/logout_snacbar.dart';
@@ -26,7 +27,9 @@ class ProfilePage extends StatelessWidget {
             elevation: 0,
             child: ItemDriwer(
                 title: "AsadbekAbdumajidov7@gmail.com",
-                ontap: () {},
+                ontap: () {
+                  Navigator.pushNamed(context, AppRoutes.editMail);
+                },
                 icon: Icons.mail),
           ),
           Padding(
@@ -124,8 +127,10 @@ class ProfilePage extends StatelessWidget {
             child: IconButton(
                 iconSize: 30,
                 splashRadius: 24,
-                onPressed: () {},
-                icon: const Icon(Icons.edit_location_alt_outlined)),
+                onPressed: () {
+                  Navigator.pushNamed(context, AppRoutes.editProfile);
+                },
+                icon: const Icon(Icons.edit)),
           )
         ]);
   }

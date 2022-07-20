@@ -1,7 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:taxi_app/core/routes/app_routes.dart';
 import 'package:taxi_app/presentation/views/choose_location.dart/choose_location_page.dart';
+import 'package:taxi_app/presentation/views/edit_mail/edit_mail_page.dart';
+import 'package:taxi_app/presentation/views/edit_profile/edit_profile.dart';
 import 'package:taxi_app/presentation/views/home/home_page.dart';
 import 'package:taxi_app/presentation/views/profile/profile_page.dart';
 import 'package:taxi_app/presentation/views/splash/splash_page.dart';
@@ -17,6 +18,10 @@ class RouteGenerate {
         return simpleRoute(const ChooseLocation());
       case AppRoutes.profile:
         return simpleRoute(const ProfilePage());
+      case AppRoutes.editMail:
+        return simpleRoute(const EditMail());
+        case AppRoutes.editProfile:
+        return simpleRoute(const EditProfile());
     }
     return null;
   }
