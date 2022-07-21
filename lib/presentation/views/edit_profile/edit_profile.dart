@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxi_app/core/themes/button_styles.dart';
 import 'package:taxi_app/core/themes/colors.dart';
 import 'package:taxi_app/core/themes/styles.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
@@ -36,8 +37,9 @@ class _EditProfileState extends State<EditProfile> {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Stack(
+            Column(children: [Stack(
               children: [
                 CircleAvatar(
                   radius: 40,
@@ -82,7 +84,7 @@ class _EditProfileState extends State<EditProfile> {
                 Padding(
                     padding: EdgeInsets.symmetric(vertical: he(8)),
                     child: TExtFieldWidget(
-                        controller: nameF,
+                        controller: nameL,
                         hinTex: "Enter last name",
                         icon: Icons.person)),
                 SizedBox(height: he(8)),
@@ -91,7 +93,7 @@ class _EditProfileState extends State<EditProfile> {
                 Padding(
                     padding: EdgeInsets.symmetric(vertical: he(8)),
                     child: TExtFieldWidget(
-                        controller: nameF,
+                        controller: phone,
                         hinTex: "Enter phone number",
                         icon: Icons.phone)),
                 SizedBox(height: he(16)),
@@ -99,7 +101,14 @@ class _EditProfileState extends State<EditProfile> {
                     "Your phone number can't be changed. If you want to link your account to another phone number, please contact",
                     style: AppTextStyle.instance.styleBlackW500S14)
               ],
-            )
+            ),
+            ],),
+            ElevatedButton(
+                style: AppButtonStyle
+                    .instance.buttonStyleBorder8ColorPrimaryHe36Wi101,
+                onPressed: () {},
+                child: Text("Upload",
+                    style: AppTextStyle.instance.styleWhiteW600S16))
           ],
         ),
       ),

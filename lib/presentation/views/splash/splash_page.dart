@@ -17,7 +17,7 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(const Duration(seconds: 3), () {
       setState(() {
         Navigator.pushNamedAndRemoveUntil(
-            context, AppRoutes.mapViews, (route) => false);
+            context, AppRoutes.auth, (route) => false);
       });
     });
   }

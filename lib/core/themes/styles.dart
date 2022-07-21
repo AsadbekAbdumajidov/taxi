@@ -20,6 +20,10 @@ class AppTextStyle {
       color: AppColors.instance.black,
       fontWeight: FontWeight.w600,
       fontSize: he(16));
+  TextStyle styleWhiteW600S16 = TextStyle(
+      color: AppColors.instance.white,
+      fontWeight: FontWeight.w600,
+      fontSize: he(16));
 
   TextStyle styleBlackW500S14 = TextStyle(
       color: AppColors.instance.darkGrey,
