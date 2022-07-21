@@ -7,16 +7,10 @@ import 'package:taxi_app/core/themes/styles.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
 import 'package:taxi_app/presentation/views/_widgets/text_field_widget.dart';
 
-class AuthPage extends StatefulWidget {
-  const AuthPage({Key? key}) : super(key: key);
+class AuthPage extends StatelessWidget {
+  AuthPage({Key? key}) : super(key: key);
+  final controller = TextEditingController();
 
-  @override
-  State<AuthPage> createState() => _AuthPageState();
-}
-
-TextEditingController controller = TextEditingController();
-
-class _AuthPageState extends State<AuthPage> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -55,7 +49,8 @@ class _AuthPageState extends State<AuthPage> {
                     style: AppButtonStyle
                         .instance.buttonStyleBorder8ColorPrimaryHe36Wi101,
                     onPressed: () {
-                      Navigator.pushNamed(context, AppRoutes.mapViews);
+                      Navigator.pushNamed(context, AppRoutes.verifyPage,
+                          arguments: controller.text.toString());
                     },
                     child: Text("Sign in",
                         style: AppTextStyle.instance.styleWhiteW600S16)),

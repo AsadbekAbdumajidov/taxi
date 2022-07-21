@@ -17,6 +17,7 @@ class AppButtonStyle {
       borderRadius: BorderRadius.all(Radius.circular(8)),
     ),
   );
+  
 
   ButtonStyle buttonStyleBorder8He36Wi101 = OutlinedButton.styleFrom(
       fixedSize: Size(wi(320), he(44)),

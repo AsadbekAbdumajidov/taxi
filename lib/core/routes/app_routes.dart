@@ -7,4 +7,5 @@ class AppRoutes {
   static const editMail = "/editMail";
   static const editProfile = "/editProfile";
   static const auth = "/auth";
+  static const verifyPage = "/verifyPage";
 }

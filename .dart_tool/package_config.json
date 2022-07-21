@@ -104,6 +104,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "google_maps_flutter",
       "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-2.1.8",
       "packageUri": "lib/",
@@ -124,6 +130,12 @@
     {
       "name": "http_parser",
       "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -164,6 +176,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "pinput",
+      "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/pinput-2.2.11",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "plugin_platform_interface",
       "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.2",
       "packageUri": "lib/",
@@ -174,6 +192,12 @@
       "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "smart_auth",
+      "rootUri": "file:///home/asadbek/softs/flutter_linux_2.10.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/smart_auth-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
     },
     {
       "name": "source_span",
@@ -242,7 +266,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-07-21T10:27:52.665574Z",
+  "generated": "2022-07-21T11:04:13.659886Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

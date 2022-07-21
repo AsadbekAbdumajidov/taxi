@@ -7,6 +7,7 @@ import 'package:taxi_app/presentation/views/edit_profile/edit_profile.dart';
 import 'package:taxi_app/presentation/views/home/home_page.dart';
 import 'package:taxi_app/presentation/views/profile/profile_page.dart';
 import 'package:taxi_app/presentation/views/splash/splash_page.dart';
+import 'package:taxi_app/presentation/views/verify/verify_page.dart';
 
 class RouteGenerate {
   Route? generate(RouteSettings settings) {
@@ -24,7 +25,9 @@ class RouteGenerate {
       case AppRoutes.editProfile:
         return simpleRoute(const EditProfile());
       case AppRoutes.auth:
-        return simpleRoute(const AuthPage());
+        return simpleRoute( AuthPage());
+         case AppRoutes.verifyPage:
+        return simpleRoute( VerifyPage());
     }
     return null;
   }

@@ -28,6 +28,8 @@ dependencies:
   flutter_exit_app: ^1.0.5
   #
   country_code_picker: ^2.0.2
+  #
+  pinput: ^2.2.11
 
 dev_dependencies:
   flutter_test:
