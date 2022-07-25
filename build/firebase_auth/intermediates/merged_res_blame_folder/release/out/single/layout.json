@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/f910e53d48c9bb13b167634611201768/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/f910e53d48c9bb13b167634611201768/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/f910e53d48c9bb13b167634611201768/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/f910e53d48c9bb13b167634611201768/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/browser_actions_context_menu_row.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/6ad2882e70130260d46e79cbdbdd7320/browser-1.4.0/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/f910e53d48c9bb13b167634611201768/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/f910e53d48c9bb13b167634611201768/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/firebase_auth/intermediates/res/merged/release/layout/browser_actions_context_menu_page.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/6ad2882e70130260d46e79cbdbdd7320/browser-1.4.0/res/layout/browser_actions_context_menu_page.xml"
+    }
+]

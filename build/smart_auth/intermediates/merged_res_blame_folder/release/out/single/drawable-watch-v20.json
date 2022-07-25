@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/smart_auth/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/3b81e0e00e06fd66da1a552393f796c3/jetified-play-services-auth-20.1.0/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/smart_auth/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/3b81e0e00e06fd66da1a552393f796c3/jetified-play-services-auth-20.1.0/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/asadbek/work/Flutter/my_app/taxi/build/smart_auth/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/asadbek/.gradle/caches/transforms-2/files-2.1/3b81e0e00e06fd66da1a552393f796c3/jetified-play-services-auth-20.1.0/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    }
+]
