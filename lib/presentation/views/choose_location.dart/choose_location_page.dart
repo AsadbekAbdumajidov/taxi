@@ -129,7 +129,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
                     ),
                     ElevatedButton(
                         style: AppButtonStyle
-                            .instance.buttonStyleBorder8ColorPrimaryHe36Wi101,
+                            .instance.buttonStyleBorder8ColorPrimaryHe36Wi320,
                         onPressed: () {
                           Navigator.pushNamed(context, AppRoutes.alongTheWay);
                         },

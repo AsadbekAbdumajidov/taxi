@@ -1,4 +1,4 @@
-#Mon Jul 25 13:28:19 UZT 2022
+#Mon Jul 25 14:16:39 UZT 2022
 base.2=/home/asadbek/work/Flutter/my_app/taxi/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
 path.2=classes3.dex
 base.1=/home/asadbek/work/Flutter/my_app/taxi/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex

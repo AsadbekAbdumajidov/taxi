@@ -12,14 +12,21 @@ class AppTextStyle {
       fontWeight: FontWeight.w800,
       color: AppColors.instance.black);
 
-      TextStyle styleBlackW600S20 =
-      TextStyle(color: AppColors.instance.black,fontWeight: FontWeight.w600, fontSize: he(20));
-
+  TextStyle styleBlackW600S20 = TextStyle(
+      color: AppColors.instance.black,
+      fontWeight: FontWeight.w600,
+      fontSize: he(20));
 
   TextStyle styleBlackW600S16 = TextStyle(
       color: AppColors.instance.black,
       fontWeight: FontWeight.w600,
       fontSize: he(16));
+
+       TextStyle stylegreenW600S16 = TextStyle(
+      color: AppColors.instance.green,
+      fontWeight: FontWeight.w600,
+      fontSize: he(16));
+
   TextStyle styleWhiteW600S16 = TextStyle(
       color: AppColors.instance.white,
       fontWeight: FontWeight.w600,
@@ -29,5 +36,4 @@ class AppTextStyle {
       color: AppColors.instance.darkGrey,
       fontWeight: FontWeight.w500,
       fontSize: he(14));
-  
 }

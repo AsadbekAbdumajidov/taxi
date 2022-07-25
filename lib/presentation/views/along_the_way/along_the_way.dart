@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:taxi_app/core/themes/button_styles.dart';
 import 'package:taxi_app/core/themes/colors.dart';
 import 'package:taxi_app/core/themes/styles.dart';
 import 'package:taxi_app/presentation/components/decoration.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
+import 'package:taxi_app/presentation/views/_widgets/alert_dialog_detail.dart';
 import 'package:taxi_app/presentation/views/along_the_way/_widget/tapbar_item.dart';
 
 class AlongTheWay extends StatelessWidget {
@@ -57,22 +57,45 @@ class AlongTheWay extends StatelessWidget {
             ],
           ),
         ),
-        body: const TabBarView(
+        body: TabBarView(
           children: [
             TapBarItem(
-                avtoName: "Cobalt: ",
-                avtoNumber: "01.A433.AA",
-                coast: "27 min som",
-                name: "Samandar",
-                seats: "2 seats",
-                timeToLive: "16 : 00", img: 'assets/img/bill.jpg',),
-           TapBarItem(
-                avtoName: "Mers Avtobus: ",
-                avtoNumber: "01.A717.AA",
-                coast: "1 400 som",
-                name: "Jurabek",
-                seats: "16 seats",
-                timeToLive: "08 : 00", img: 'assets/img/Getty.webp',),
+              avtoName: "Cobalt: ",
+              avtoNumber: "01.A433.AA",
+              coast: "27 min som",
+              name: "Samandar",
+              seats: "2 seats",
+              timeToLive: "16 : 00",
+              img: 'assets/img/bill.jpg',
+              onTap: () {
+                CupertinoShowDialogIcDetail.showDialog(
+                  context: context,
+                  avtoName: "Cobalt",
+                  name: "Samandar",
+                  img: "assets/img/bill.jpg",
+                  seat: "2",
+                  coast: "23 ming som",
+                );
+              },
+            ),
+            TapBarItem(
+              avtoName: "Mers Avtobus: ",
+              avtoNumber: "01.A717.AA",
+              coast: "1 400 som",
+              name: "Jurabek",
+              seats: "16 seats",
+              timeToLive: "08 : 00",
+              img: 'assets/img/Getty.webp',
+              onTap: () {
+                CupertinoShowDialogIcDetail.showDialog(
+                    context: context,
+                    avtoName: "Cobalt",
+                    name: "Jurabek",
+                    img: "assets/img/Getty.webp",
+                    seat: "24",
+                    coast: "1 400 som");
+              },
+            ),
           ],
         ),
       ),

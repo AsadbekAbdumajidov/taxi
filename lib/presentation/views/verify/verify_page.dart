@@ -68,7 +68,7 @@ class _VerifyPageState extends State<VerifyPage> {
             SizedBox(height: he(32)),
             ElevatedButton(
                 style: AppButtonStyle
-                    .instance.buttonStyleBorder8ColorPrimaryHe36Wi101,
+                    .instance.buttonStyleBorder8ColorPrimaryHe36Wi320,
                 onPressed: () {
                   Navigator.pushNamed(context, AppRoutes.mapViews);
                 },

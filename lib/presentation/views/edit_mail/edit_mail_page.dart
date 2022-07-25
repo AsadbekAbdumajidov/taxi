@@ -87,7 +87,7 @@ class _EditMailState extends State<EditMail> {
             ),
             ElevatedButton(
                 style: AppButtonStyle
-                    .instance.buttonStyleBorder8ColorPrimaryHe36Wi101,
+                    .instance.buttonStyleBorder8ColorPrimaryHe36Wi320,
                 onPressed: () {},
                 child: Text("Upload",
                     style: AppTextStyle.instance.styleWhiteW600S16))

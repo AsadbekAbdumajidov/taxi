@@ -87,17 +87,22 @@ class BottomContainer extends StatelessWidget {
                           width: wi(150),
                           decoration: AppDecoration
                               .instance.styleGreeySearchBorderRadius12,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Icon(
-                                Icons.map_outlined,
-                                size: he(30),
-                              ),
-                              Text("along the way",
-                                  style:
-                                      AppTextStyle.instance.styleW800S20Black)
-                            ],
+                          child: InkWell(
+                            onTap: (){
+                              Navigator.pushNamed(context, AppRoutes.chooseLocation);
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Icon(
+                                  Icons.map_outlined,
+                                  size: he(30),
+                                ),
+                                Text("along the way",
+                                    style:
+                                        AppTextStyle.instance.styleW800S20Black)
+                              ],
+                            ),
                           ),
                         ),
                         Container(

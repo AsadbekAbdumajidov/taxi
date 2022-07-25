@@ -64,7 +64,7 @@ class _AuthPageState extends State<AuthPage> {
                   ),
                   ElevatedButton(
                       style: AppButtonStyle
-                          .instance.buttonStyleBorder8ColorPrimaryHe36Wi101,
+                          .instance.buttonStyleBorder8ColorPrimaryHe36Wi320,
                       onPressed: () {
                         if (AuthPage.formKey.currentState!.validate()) {
                           debugPrint(Controller.phone.text);
