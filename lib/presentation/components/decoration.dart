@@ -10,7 +10,7 @@ class AppDecoration {
     color: AppColors.instance.white,
     boxShadow: [
       BoxShadow(
-        color: Colors.grey.withOpacity(0.5),
+        color: Colors.grey.withOpacity(0.3),
         spreadRadius: 2,
         blurRadius: 7,
         offset: const Offset(0, -2),
@@ -28,5 +28,17 @@ class AppDecoration {
 
   BoxDecoration styleGreeySearchBorderRadius12 = BoxDecoration(
       color: AppColors.instance.greeySearch,
+      borderRadius: BorderRadius.circular(12));
+
+  BoxDecoration styleWhiteBorderRadius12 = BoxDecoration(
+      color: AppColors.instance.white,
+      boxShadow: [
+      BoxShadow(
+        color: Colors.grey.withOpacity(0.1),
+        spreadRadius: 2,
+        blurRadius: 7,
+        offset: const Offset(0, -2),
+      ),
+    ],
       borderRadius: BorderRadius.circular(12));
 }

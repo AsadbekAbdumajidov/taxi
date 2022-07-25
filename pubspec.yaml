@@ -54,6 +54,7 @@ flutter:
   assets:
     - assets/png/
     - assets/svg/
+    - assets/img/
 
   fonts:
     - family: SFPro

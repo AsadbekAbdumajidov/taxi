@@ -26,6 +26,7 @@ class TextFieldWidget extends StatelessWidget {
       onTap: () {},
       textInputAction: textInputAction,
       controller: controller,
+      
       readOnly: false,
       autofocus: false,
       onChanged: onChanged,
@@ -105,6 +106,7 @@ class CustomPrefixTextField extends StatelessWidget {
           borderSide: BorderSide(),
         ),
         enabledBorder: OutlineInputBorder(
+          
           borderRadius: const BorderRadius.all(Radius.circular(16)),
           borderSide: BorderSide(
             color: AppColors.instance.neutral200,

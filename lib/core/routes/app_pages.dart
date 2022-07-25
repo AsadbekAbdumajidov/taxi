@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taxi_app/core/routes/app_routes.dart';
+import 'package:taxi_app/presentation/views/along_the_way/along_the_way.dart';
 import 'package:taxi_app/presentation/views/auth/auth_page.dart';
 import 'package:taxi_app/presentation/views/choose_location.dart/choose_location_page.dart';
 import 'package:taxi_app/presentation/views/edit_mail/edit_mail_page.dart';
@@ -28,6 +29,8 @@ class RouteGenerate {
         return simpleRoute(const AuthPage());
       case AppRoutes.verifyPage:
         return simpleRoute(const VerifyPage());
+      case AppRoutes.alongTheWay:
+        return simpleRoute(const AlongTheWay());
     }
     return null;
   }

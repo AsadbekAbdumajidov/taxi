@@ -1,3 +1,4 @@
+
 class AppRoutes {
   AppRoutes._();
   static const splash = '/';
@@ -8,4 +9,5 @@ class AppRoutes {
   static const editProfile = "/editProfile";
   static const auth = "/auth";
   static const verifyPage = "/verifyPage";
+   static const alongTheWay = "/alongTheWay";
 }
