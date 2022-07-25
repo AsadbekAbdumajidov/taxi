@@ -60,6 +60,31 @@ class _ChooseLocationState extends State<ChooseLocation> {
                 ),
               ),
             ),
+            Expanded(
+              child: ListView.builder(
+                padding: EdgeInsets.symmetric(vertical: he(8)),
+                  scrollDirection: Axis.vertical,
+                  itemCount: 3,
+                  itemBuilder: (_, __) {
+                    return Padding(
+                      padding:  EdgeInsets.symmetric(horizontal: wi(6)),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            onTap: (){},
+                            leading: const Icon(Icons.location_pin),
+                            title: Text("Chilonzor",
+                                style: AppTextStyle.instance.styleBlackW600S16),
+                            subtitle: Text("Uzbekistan",
+                                style: AppTextStyle.instance.styleBlackW500S14),
+                            trailing: const Icon(Icons.call_missed_outlined),
+                          ),
+                          const Divider()
+                        ],
+                      ),
+                    );
+                  }),
+            ),
             Container(
               height: he(210),
               decoration:
