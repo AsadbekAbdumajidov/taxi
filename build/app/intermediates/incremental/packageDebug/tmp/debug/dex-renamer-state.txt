@@ -1,4 +1,10 @@
-#Thu Jul 21 15:56:48 UZT 2022
+#Mon Jul 25 10:25:41 UZT 2022
+base.2=/home/asadbek/work/Flutter/my_app/taxi/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
+path.2=classes3.dex
+base.1=/home/asadbek/work/Flutter/my_app/taxi/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+path.1=classes2.dex
 base.0=/home/asadbek/work/Flutter/my_app/taxi/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

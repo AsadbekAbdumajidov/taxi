@@ -25,9 +25,9 @@ class RouteGenerate {
       case AppRoutes.editProfile:
         return simpleRoute(const EditProfile());
       case AppRoutes.auth:
-        return simpleRoute( AuthPage());
-         case AppRoutes.verifyPage:
-        return simpleRoute( VerifyPage());
+        return simpleRoute(const AuthPage());
+      case AppRoutes.verifyPage:
+        return simpleRoute(const VerifyPage());
     }
     return null;
   }

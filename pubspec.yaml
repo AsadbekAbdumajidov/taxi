@@ -30,6 +30,12 @@ dependencies:
   country_code_picker: ^2.0.2
   #
   pinput: ^2.2.11
+  firebase_storage: ^10.3.2
+  cloud_firestore: ^3.3.0
+  firebase_core: ^1.19.2
+  firebase_auth: ^3.4.2
+  flutter_bloc: ^8.0.1
+  google_sign_in: ^5.4.0
 
 dev_dependencies:
   flutter_test:

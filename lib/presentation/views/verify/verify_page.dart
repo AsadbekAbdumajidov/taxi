@@ -1,18 +1,31 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 import 'package:taxi_app/core/routes/app_routes.dart';
+import 'package:taxi_app/core/services/firebase_auth.dart';
 import 'package:taxi_app/core/themes/button_styles.dart';
 import 'package:taxi_app/core/themes/colors.dart';
 import 'package:taxi_app/core/themes/styles.dart';
+import 'package:taxi_app/presentation/components/controller.dart';
 import 'package:taxi_app/presentation/components/size_konfig.dart';
 
-class VerifyPage extends StatelessWidget {
-  VerifyPage({Key? key}) : super(key: key);
-  final textController = TextEditingController();
+class VerifyPage extends StatefulWidget {
+  const VerifyPage({Key? key}) : super(key: key);
+
+  @override
+  State<VerifyPage> createState() => _VerifyPageState();
+}
+
+class _VerifyPageState extends State<VerifyPage> {
   final focusNode = FocusNode();
   @override
+  void initState() {
+    super.initState();
+    FirebaseService.verifySms();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final phone = ModalRoute.of(context)!.settings.arguments;
     return Scaffold(
       backgroundColor: AppColors.instance.white,
       appBar: AppBar(
@@ -22,7 +35,6 @@ class VerifyPage extends StatelessWidget {
             Text("Enter code", style: AppTextStyle.instance.styleBlackW600S20),
       ),
       body: SafeArea(
-        
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: wi(20)),
           children: [
@@ -33,21 +45,22 @@ class VerifyPage extends StatelessWidget {
             ),
             SizedBox(height: he(4)),
             Text(
-              phone.toString(),
+              "+998${Controller.phone.text}",
               style: AppTextStyle.instance.styleBlackW500S14
                   .copyWith(color: AppColors.instance.black),
             ),
             SizedBox(height: he(32)),
             Pinput(
-              androidSmsAutofillMethod:
-                  AndroidSmsAutofillMethod.smsUserConsentApi,
+              length: 6,
+              // androidSmsAutofillMethod:
+              //     AndroidSmsAutofillMethod.smsUserConsentApi,
               defaultPinTheme: defaultPinTheme,
               focusedPinTheme: focusedPinTheme,
               submittedPinTheme: submittedPinTheme,
               textInputAction: TextInputAction.next,
               focusNode: focusNode,
               autofocus: true,
-              controller: textController,
+              controller: Controller.sms,
               onChanged: (code) {},
               pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
               onCompleted: (pin) => debugPrint(pin),
@@ -72,9 +85,17 @@ class VerifyPage extends StatelessWidget {
                 ),
                 SizedBox(width: wi(4)),
                 GestureDetector(
-                  onTap: () {
-                    textController.text = '';
+                  onTap: () async {
+                    await FirebaseAuth.instance.signInWithCredential(
+                      PhoneAuthProvider.credential(
+                        verificationId: FirebaseService.id,
+                        smsCode: Controller.sms.text,
+                      ),
+                    );
+                    
+                    Controller.sms.clear();
                     focusNode.unfocus();
+                    Navigator.pushNamed(context, AppRoutes.mapViews);
                   },
                   child: Text(
                     "Resend",
