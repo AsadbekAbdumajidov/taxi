@@ -32,7 +32,7 @@ class BottomContainer extends StatelessWidget {
               ),
             )),
         Container(
-          height: he(110),
+          height: he(180),
           width: context.w,
           decoration:
               AppDecoration.instance.styleBoxShadowBorderRadiusAll20White,
@@ -48,32 +48,84 @@ class BottomContainer extends StatelessWidget {
                       decoration:
                           AppDecoration.instance.styleGreeySearchBorderRadius16,
                     ),
-                    SizedBox(height: he(12)),
-                    InkWell(
-                      onTap: () {
-                        Navigator.pushNamed(context, AppRoutes.chooseLocation);
-                      },
-                      child: Container(
-                        height: he(60),
-                        decoration: AppDecoration
-                            .instance.styleGreeySearchBorderRadius12,
-                        child: Row(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: wi(12)),
-                              child: CircleAvatar(
-                                  radius: 18,
-                                  backgroundColor: AppColors.instance.primary20,
-                                  child: Icon(
-                                    Icons.search,
-                                    color: AppColors.instance.black,
-                                  )),
-                            ),
-                            Text("Where to?",
-                                style: AppTextStyle.instance.styleW800S20Black)
-                          ],
+                    
+                    Padding(
+                      padding:  EdgeInsets.symmetric(vertical: he(12)),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, AppRoutes.chooseLocation);
+                        },
+                        child: Container(
+                          height: he(60),
+                          decoration: AppDecoration
+                              .instance.styleGreeySearchBorderRadius12,
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: wi(12)),
+                                child: CircleAvatar(
+                                    radius: 18,
+                                    backgroundColor: AppColors.instance.primary20,
+                                    child: Icon(
+                                      Icons.search,
+                                      color: AppColors.instance.black,
+                                    )),
+                              ),
+                              Text("Where to?",
+                                  style: AppTextStyle.instance.styleW800S20Black)
+                            ],
+                          ),
                         ),
                       ),
+                    ),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: he(60),
+                          width: wi(150),
+                          decoration: AppDecoration
+                              .instance.styleGreeySearchBorderRadius12,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(
+                                Icons.map_outlined,
+                                size: he(30),
+                              ),
+                              Text("along the way",
+                                  style:
+                                      AppTextStyle.instance.styleW800S20Black)
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: he(60),
+                          width: wi(150),
+                          decoration: AppDecoration
+                              .instance.styleGreeySearchBorderRadius12,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(Icons.no_food_outlined,
+                                  size: he(30),
+                                  color: AppColors.instance.yellow),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text("Chikki food",
+                                      style:
+                                          AppTextStyle.instance.styleW800S20Black),
+                                          Text("fast delivery",
+                                      style:
+                                          AppTextStyle.instance.styleBlackW500S14),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
